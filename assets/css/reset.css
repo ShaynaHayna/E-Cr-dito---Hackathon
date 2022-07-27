@@ -8,11 +8,13 @@ a,
 button {
   text-decoration: none;
   font-family: inherit;
+  color: inherit;
 }
 
 a:visited,
 a:link,
-a:active {
+a:active,
+a:hover {
   text-decoration: none;
 }
 
