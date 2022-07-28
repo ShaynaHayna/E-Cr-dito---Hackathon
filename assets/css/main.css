@@ -10,16 +10,175 @@ body {
   font-smooth: auto;
 }
 
+header {
+  background-color: #0080ed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 1263px;
+  margin: auto;
+}
+
+header h1 {
+  margin: auto;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 24px;
+  transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
 /* Hero */
 
-/* Beneficios */
+.hero__titulo {
+  font-size: 45px;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero__subtitulo {
+  margin-bottom: 15px;
+}
+
+.hero__info h3 {
+  text-align: center;
+}
+
+.hero__lista {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.hero__div { 
+  width: 500px; 
+  height: 100px; 
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  margin: 50px;
+  margin-top: 20px;
+}
+
+.hero__div h3 {
+  font-size: 25px;
+}
+
+.hero__button {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 30px;
+  color: darkblue;
+  background-color: transparent;
+  border: 2px solid lightblue;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin: 0px 110px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: .5s ease;
+  transition-property: background-color, color;
+  height: 50px; 
+  width: 300px;  
+  position:relative;
+  left: 30%;
+}
+.hero__button:hover {
+  color: white;
+  font-weight: 500;
+  background-color: lightblue;
+}
 
 /* Parceiros */
 
-/* Sobre nos */
+.parceiros h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
 
-/* Contato */
+.cards {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.text--medium {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px -4px #000000;
+  transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.image {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image img {
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin:20px;
+}
+
+.title {
+  margin-bottom:0px;
+}
 
 /* Footer */
+
+footer {
+  background-color: #0080ed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  width: 1263px;
+  margin-top: 50px;
+  color: #fff;
+}
 
 @import "queries.css";
