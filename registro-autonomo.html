@@ -29,7 +29,7 @@
       <main>
         <section class="cadastro">
           <h2 class="cadastro__titulo">
-            Registro para informais, formais ou mei.
+            Cadastro para Informais e Autônomos
           </h2>
           <div class="cadastro-area">
             <img
@@ -68,6 +68,11 @@
                 <input id="email" name="email" type="email" required />
               </div>
 
+              <div class="cadastro__form-control">
+                <label for="email">Endereço completo</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
               <fieldset>
                 <legend>Interesses</legend>
                 <div
@@ -91,7 +96,7 @@
                     type="checkbox"
                     required
                   />
-                  <label for="interesse-emprestimos">Emprestimos</label>
+                  <label for="interesse-emprestimos">Empréstimos</label>
                 </div>
 
                 <div
@@ -115,7 +120,7 @@
                     type="checkbox"
                     required
                   />
-                  <label for="interesse-concorcios">Concórcios</label>
+                  <label for="interesse-concorcios">Consórcios</label>
                 </div>
 
                 <div
@@ -139,7 +144,7 @@
                     type="checkbox"
                     required
                   />
-                  <label for="interesse-previdencia">Previdencia</label>
+                  <label for="interesse-previdencia">Previdência</label>
                 </div>
 
                 <div
@@ -163,7 +168,19 @@
                     type="checkbox"
                     required
                   />
-                  <label for="interesse-produtos">Produtos</label>
+                  <label for="interesse-produtos">Consumo de Produtos Gerais</label>
+                </div>
+                
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-produtos"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-produtos">Consumo de Serviços Gerais</label>
                 </div>
 
                 <div
@@ -180,7 +197,7 @@
               </fieldset>
 
               <fieldset>
-                <legend>Renda mensal</legend>
+                <legend>Renda Mensal</legend>
 
                 <div
                   class="cadastro__form-control cadastro__form-control--checkboxes"
@@ -192,7 +209,7 @@
                     value="A"
                     required
                   />
-                  <label for="renda-a">até R$ 500,00</label>
+                  <label for="renda-a">Até R$ 500,00</label>
                 </div>
 
                 <div
@@ -205,7 +222,7 @@
                     value="B"
                     required
                   />
-                  <label for="renda-b">de R$ 500,00 até R$ 1.000,00</label>
+                  <label for="renda-b">De R$ 500,00 até R$ 1.000,00</label>
                 </div>
 
                 <div
@@ -218,7 +235,7 @@
                     value="C"
                     required
                   />
-                  <label for="renda-c">de R$ 1.000,00 até R$ 2.000,00</label>
+                  <label for="renda-c">De R$ 1.000,00 até R$ 2.000,00</label>
                 </div>
 
                 <div
@@ -231,7 +248,7 @@
                     value="D"
                     required
                   />
-                  <label for="renda-c">de R$ 2.000,00 até R$ 3.000,00</label>
+                  <label for="renda-d">De R$ 2.000,00 até R$ 3.000,00</label>
                 </div>
 
                 <div
@@ -244,12 +261,621 @@
                     value="E"
                     required
                   />
-                  <label for="renda-e">acima de R$ 3.000,00</label>
+                  <label for="renda-e">Acima de R$ 3.000,00</label>
                 </div>
               </fieldset>
 
               <fieldset>
-                <legend>Capital disponível</legend>
+                <legend>Quantas pessoas vivem da renda mensal informada?</legend>
+
+              <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="qtd-1"
+                    name="qtd"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="qtd-1">1</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="qtd-2"
+                    name="qtd"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="qtd-2">2</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="qtd-3"
+                    name="qtd"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="qtd-3">3</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="qtd-4"
+                    name="qtd"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="qtd-4">4</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="qtd-5"
+                    name="qtd"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="qtd-5">Mais de 4</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Quantas contas bancárias (corrente ou poupança) você possui?</legend>
+
+              <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="contas-1"
+                    name="contas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="contas-1">1</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="contas-2"
+                    name="contas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="contas-2">2</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="contas-3"
+                    name="contas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="contas-3">3 ou mais</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Quantos cartões de crédito você tem?</legend>
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="cartoes-1"
+                    name="cartoes"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="caartoes-1">Nenhum</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="cartoes-2"
+                    name="cartoes"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="caartoes-2">1</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="cartoes-3"
+                    name="cartoes"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="caartoes-3">2</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="cartoes-4"
+                    name="cartoes"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="cartoes-4">3 ou mais</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Capital Disponível*</legend>
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="capital-1"
+                    name="capital"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="capital-1">Até R$5.000,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="capital-2"
+                    name="capital"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="capital-2">De R$5.000,00 a R$10.000,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="capital-3"
+                    name="capital"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="capital-3">De R$10.000,00 a R$20.000,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="capital-4"
+                    name="capital"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="capital-4">De R$20.000,00 a R$40.000,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="capital-5"
+                    name="capital"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="capital-5">Acima de R$40.000,00</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Qual o nível de sua escolaridade?</legend>
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="escolaridade-1"
+                    name="escolaridade"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="escolaridade-1">1º Grau Incompleto</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="escolaridade-2"
+                    name="escolaridade"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="escolaridade-2">1º Grau Completo</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="escolaridade-3"
+                    name="escolaridade"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="escolaridade-3">2º Grau Incompleto</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="escolaridade-4"
+                    name="escolaridade"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="escolaridade-4">2º Grau Completo</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="escolaridade-5"
+                    name="escolaridade"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="escolaridade-5">Superior Incompleto</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="escolaridade-6"
+                    name="escolaridade"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="escolaridade-6">Superior Completo</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="escolaridade-7"
+                    name="escolaridade"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="escolaridade-7">Pós-Graduação</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Com quem você mora?</legend>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="pessoas-1"
+                    name="pessoas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="pessoas-1">Pais, pai ou mãe</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="pessoas-2"
+                    name="pessoas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="pessoas-2">Cônjuge</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="pessoas-3"
+                    name="pessoas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="pessoas-3">Parentes, amigos ou sozinho</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Qual a situação da casa em que você mora?</legend>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="casa-1"
+                    name="casas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="casa-1">Própria</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="casa-2"
+                    name="casas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="casa-2">Alugada</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="casa-3"
+                    name="casas"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="casa-3">Outras situações de moradia</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Quantos quartos e salas, somados, tem a sua moradia? Inclua dependências de empregados na resposta</legend>
+
+                <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="comodos-1"
+                  name="comodos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="comodos-1">1 ou 2</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="comodos-2"
+                  name="comodos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="comodos-2">3 ou 4</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="comodos-3"
+                  name="comodos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="comodos-3">Mais de 4</label>
+              </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Quantos veículos (carros e motos), para uso pessoal, tem sua família?</legend>
+
+                <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="veiculos-1"
+                  name="veiculos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="veiculos-1">Nenhum</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="veiculos-2"
+                  name="veiculos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="veiculos-2">1</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="veiculos-3"
+                  name="veiculos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="veiculos-3">2</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="veiculos-4"
+                  name="veiculos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="veiculos-4">3 ou mais</label>
+              </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Qual o principal responsável por seu sustento e/ou de sua família?</legend>
+
+                <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="familia-1"
+                  name="familia"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="familia-1">Seus pais, apenas seu pai ou apenas sua mãe</label>
+              </div>
+
+              <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input
+                id="familia-2"
+                name="familia"
+                type="radio"
+                value="A"
+                required
+              />
+              <label for="familia-2">Você</label>
+            </div>
+
+            <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input
+              id="familia-3"
+              name="familia"
+              type="radio"
+              value="A"
+              required
+            />
+            <label for="familia-3">Outros</label>
+          </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Quantos aparelhos de TV você possui?</legend>
+
+                <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="aparelhos-1"
+                  name="aparelhos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="aparelhos-1">Nenhum</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="aparelhos-2"
+                  name="aparelhos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="aparelhos-2">1</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="aparelhos-3"
+                  name="aparelhos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="aparelhos-3">2</label>
+              </div>
+
+              <div
+                class="cadastro__form-control cadastro__form-control--checkboxes"
+              >
+                <input
+                  id="aparelhos-4"
+                  name="aparelhos"
+                  type="radio"
+                  value="A"
+                  required
+                />
+                <label for="aparelhos-4">3 ou mais</label>
+              </div>
               </fieldset>
 
               <button class="cadastro-form__button" type="submit">
