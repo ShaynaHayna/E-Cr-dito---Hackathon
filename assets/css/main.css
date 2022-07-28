@@ -240,20 +240,27 @@ footer {
 .cadastro-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .cadastro__image {
   display: flex;
   height: 300px;
+  margin: 5rem 0;
+  flex: 1;
+  order: 2;
 }
 
 .cadastro-form {
+  display: flex;
+  flex-direction: column;
   margin: 0 10rem;
+  width: 100%;
+  flex: 1;
 }
 
 .cadastro__form-control {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .cadastro__form-control input {
@@ -286,6 +293,22 @@ footer {
 
 .cadastro-form__button:hover {
   background-color: #2f92e8;
+}
+
+fieldset legend {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cadastro__form-control--checkboxes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cadastro__form-control--checkboxes input {
+  width: min-content;
+  margin-top: 0;
 }
 
 @import "queries.css";

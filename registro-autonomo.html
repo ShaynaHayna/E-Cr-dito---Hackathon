@@ -28,8 +28,235 @@
       </header>
       <main>
         <section class="cadastro">
-          <h2 class="cadastro__titulo">Registro para empresas</h2>
-          <form class="cadastro__form" action=""></form>
+          <h2 class="cadastro__titulo">
+            Registro para informais, formais ou mei.
+          </h2>
+          <div class="cadastro-area">
+            <img
+              class="cadastro__image"
+              src="./assets/images/form-image.svg"
+              alt="ilustraçao de um formulario"
+            />
+            <form class="cadastro-form" action="">
+              <div class="cadastro__form-control">
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="cpf">CPF</label>
+                <input id="cpf" name="cpf" type="text" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="idade">Idade</label>
+                <input id="idade" name="idade" type="number" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="profissao">Profissão</label>
+                <input id="profissao" name="profissao" type="text" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="email" type="text" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
+              <fieldset>
+                <legend>Interesses</legend>
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-todos"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-todos">Todos</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-emprestimos"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-emprestimos">Emprestimos</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-financiamentos"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-financiamentos">Financiamentos</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-concorcios"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-concorcios">Concórcios</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-seguros"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-seguros">Seguros</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-previdencia"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-previdencia">Previdencia</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-investimentos"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-investimentos">Investimentos</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-produtos"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-produtos">Produtos</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="interesse-outros"
+                    name="interesse"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="interesse-outros">Outros</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Renda mensal</legend>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="renda-a"
+                    name="renda"
+                    type="radio"
+                    value="A"
+                    required
+                  />
+                  <label for="renda-a">até R$ 500,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="renda-b"
+                    name="renda"
+                    type="radio"
+                    value="B"
+                    required
+                  />
+                  <label for="renda-b">de R$ 500,00 até R$ 1.000,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="renda-c"
+                    name="renda"
+                    type="radio"
+                    value="C"
+                    required
+                  />
+                  <label for="renda-c">de R$ 1.000,00 até R$ 2.000,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="renda-d"
+                    name="renda"
+                    type="radio"
+                    value="D"
+                    required
+                  />
+                  <label for="renda-c">de R$ 2.000,00 até R$ 3.000,00</label>
+                </div>
+
+                <div
+                  class="cadastro__form-control cadastro__form-control--checkboxes"
+                >
+                  <input
+                    id="renda-e"
+                    name="renda"
+                    type="radio"
+                    value="E"
+                    required
+                  />
+                  <label for="renda-e">acima de R$ 3.000,00</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Capital disponível</legend>
+              </fieldset>
+
+              <button class="cadastro-form__button" type="submit">
+                Cadastrar
+              </button>
+            </form>
+          </div>
         </section>
       </main>
     </div>
