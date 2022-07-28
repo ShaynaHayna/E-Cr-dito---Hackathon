@@ -15,14 +15,59 @@
     <title>E-Credito - Para empresas</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="logo">
-        <a class="logo__link" href="index.html">E-credito</a>
-      </h1>
-    </header>
-    <main>
-      <h2>Registro para empresas</h2>
-      <form action=""></form>
-    </main>
+    <div class="app">
+      <header class="header">
+        <h1 class="logo"><a class="logo__link" href="">E-Crédito</a></h1>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">Quem Somos</a></li>
+            <li class="nav__item"><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="cadastro">
+          <h2 class="cadastro__titulo">Registro para empresas</h2>
+          <div class="cadastro-area">
+            <img
+              class="cadastro__image"
+              src="./assets/images/form-image.svg"
+              alt="ilustraçao de um formulario"
+            />
+            <form class="cadastro-form" action="">
+              <div class="cadastro__form-control">
+                <label for="nome"> Nome da empresa </label>
+                <input id="nome" type="text" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="cnpj"> CNPJ </label>
+                <input id="cnpj" type="text" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="negocio"> Tipo do negócio </label>
+                <input id="negocio" type="text" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="logo-image"> Logo da empresa </label>
+                <input id="logo-image" type="file" required />
+              </div>
+
+              <div class="cadastro__form-control">
+                <label for="url"> Endereço do site </label>
+                <input id="url" type="text" />
+              </div>
+
+              <button class="cadastro-form__button" type="submit">
+                Cadastrar
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

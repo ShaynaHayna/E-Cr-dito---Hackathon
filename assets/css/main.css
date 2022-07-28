@@ -18,6 +18,10 @@ header {
   padding: 0 2rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 header h1 {
   color: #fff;
 }
@@ -218,8 +222,70 @@ footer {
 }
 
 .nav {
-  /* display: none; */
   margin-left: auto;
+}
+
+/* REGISTRO */
+
+.cadastro {
+  margin: 5rem 0;
+}
+
+.cadastro__titulo {
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 3rem;
+}
+
+.cadastro-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro__image {
+  display: flex;
+  height: 300px;
+}
+
+.cadastro-form {
+  margin: 0 10rem;
+}
+
+.cadastro__form-control {
+  margin: 2rem 0;
+}
+
+.cadastro__form-control input {
+  display: block;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #777;
+}
+
+.cadastro__form-control input:focus {
+  border: 2px solid #0080ed;
+  outline: 3px solid rgba(0, 126, 237, 0.2);
+}
+
+.cadastro__form-control label {
+  font-size: 1.75rem;
+}
+
+.cadastro-form__button {
+  background-color: #0080ed;
+  border: none;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease;
+}
+
+.cadastro-form__button:hover {
+  background-color: #2f92e8;
 }
 
 @import "queries.css";
