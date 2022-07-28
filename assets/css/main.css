@@ -14,14 +14,11 @@ header {
   background-color: #0080ed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 80px;
-  width: 1263px;
-  margin: auto;
+  padding: 0 2rem;
 }
 
 header h1 {
-  margin: auto;
   color: #fff;
 }
 
@@ -48,63 +45,105 @@ header nav ul li a:hover {
 
 /* Hero */
 
+.hero {
+  padding: 0 2rem;
+}
+
 .hero__titulo {
-  font-size: 45px;
-  text-align: center;
-  padding: 10px;
+  font-size: 8rem;
+  font-weight: 600;
 }
 
 .hero__subtitulo {
   margin-bottom: 15px;
+  color: #777;
 }
 
-.hero__info h3 {
-  text-align: center;
+.hero__info {
+  display: flex;
+  gap: 2rem;
+  height: 350px;
+}
+
+.hero__introdução {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 4rem;
+  flex: 1;
 }
 
 .hero__lista {
-  text-align: center;
-  margin-top: 10px;
-  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 4rem;
+  gap: 1rem;
+  font-weight: 500;
+  color: #529fe2;
+  flex: 1;
+  font-size: 3rem;
+}
+
+.hero__lista li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .hero__div {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: inline;
 }
 
 .hero__div h3 {
   font-size: 25px;
+  text-align: center;
+}
+
+.icon {
+  height: 24px;
+  width: auto;
+  opacity: 0.5;
 }
 
 .hero__button {
+  display: block;
   text-align: center;
-  display: inline-block;
   padding: 10px 30px;
-  color: darkblue;
   background-color: transparent;
-  border: 2px solid lightblue;
+  border: 2px solid #0080ed;
+  color: #0080ed;
+  font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin: 0px 110px;
-  margin-top: 20px;
-  margin-bottom: 10px;
   transition: 0.5s ease;
   transition-property: background-color, color;
   height: 50px;
   width: 300px;
-  position: relative;
-  left: 30%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
-.hero__button:hover {
+.button-secondary:hover {
   color: white;
   font-weight: 500;
-  background-color: lightblue;
+  background-color: #0080ed;
+}
+
+.button-primary {
+  background-color: #0080ed;
+  color: white;
 }
 
 /* Parceiros */
+
+.parceiros {
+  margin: 4rem 0;
+}
 
 .parceiros h2 {
   margin-bottom: 20px;
@@ -133,7 +172,7 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  box-shadow: 5px 5px 15px -4px #000000;
+  box-shadow: 5px 5px 15px -4px hsla(0, 0%, 0%, 0.2);
   transition: all 0.3s ease 0s;
 }
 
@@ -176,6 +215,11 @@ footer {
   padding: 2rem 0;
   margin-top: 50px;
   color: #fff;
+}
+
+.nav {
+  /* display: none; */
+  margin-left: auto;
 }
 
 @import "queries.css";

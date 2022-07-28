@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap"); */
 
 body {
-  font-family: "Multi", sans-serif;
+  /* font-family: "Multi", sans-serif; */
   color: #fff;
   display: flex;
   flex-direction: column;
