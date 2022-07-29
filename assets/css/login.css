@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap"); */
 
-body {
+main {
   /* font-family: "Multi", sans-serif; */
   color: #fff;
   display: flex;
@@ -10,6 +10,10 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+h1 {
+  color: #000;
 }
 
 .container {
@@ -32,7 +36,7 @@ body {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background: lightblue;
+  background: #529fe2;
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
@@ -72,7 +76,7 @@ body {
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
-  border-bottom-color: lightblue;
+  border-bottom-color: #529fe2;
 }
 
 .form-control label {
