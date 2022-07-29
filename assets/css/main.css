@@ -407,6 +407,37 @@ fieldset legend {
   text-align: center;
 }
 
+.cards {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.demoVideo {
+  z-index: 20;
+  background-color: transparent;
+  min-width: 30%;
+  min-height: 30%;
+  margin-top: 12%;
+  top: 10%;
+  border: 1px rgb(0, 0, 0) solid;
+}
+
+.content{
+  min-width: min-content;
+  background-color: #23ad45;
+  color: #fff;
+  padding: 10px;
+}
+
+.nome__empresa{
+  font-size: 2em;
+}
+
+.descricao__empresa{
+  color: ;
+}
+
 /* Pages */
 .page__title {
   margin: 3rem 0;
