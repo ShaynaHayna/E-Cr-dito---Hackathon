@@ -12,12 +12,16 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>E-Credito - Para empresas</title>
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>e-Crédito</title>
   </head>
+
   <body>
     <div class="app">
       <header class="header">
-        <h1 class="logo"><a class="logo__link" href="">E-Crédito</a></h1>
+        <h1 class="logo">
+          <a class="logo__link" href="index.html">e-Crédito</a>
+        </h1>
         <nav class="nav">
           <ul class="nav__links">
             <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
@@ -40,46 +44,41 @@
           </ul>
         </nav>
       </header>
+
       <main>
-        <section class="cadastro">
-          <h2 class="cadastro__titulo">Cadastro para Empresas</h2>
-          <div class="cadastro-area">
-            <img
-              class="cadastro__image"
-              src="./assets/images/form-image.svg"
-              alt="ilustraçao de um formulario"
-            />
-            <form class="cadastro-form" action="">
-              <div class="cadastro__form-control">
-                <label for="nome"> Nome da empresa </label>
-                <input id="nome" type="text" required />
-              </div>
+        <section class="page">
+          <h2 class="page__title">Quem somos</h2>
+          <p class="page__paragraph">
+            Nossa iniciativa foi concebida e estruturada por uma equipe de
+            profissionais autônomos de todo o país e de diversas áreas, todos
+            cansados de invejar os direitos e benefícios alheios! Estamos todos
+            no mesmo barco, agora vamos orar pra que não seja o Titanic!
+          </p>
+        </section>
 
-              <div class="cadastro__form-control">
-                <label for="cnpj"> CNPJ </label>
-                <input id="cnpj" type="text" required />
+        <section class="desenvolvedores">
+          <h2 class="desenvolvedores__title">Os desenvolvedores</h2>
+          <ul class="desenvolvedores__list">
+            <li class="desenvolvedores__item">
+              <div class="desenvolvedor">
+                <img
+                  class="desenvolvedor__image"
+                  src="./assets/images/profile.jpg"
+                  alt=""
+                />
+                <div class="desenvolvedor__info">
+                  <h3 class="desenvolvedor__nome">
+                    Darlisson L. da Silva,
+                    <span class="desevolvedor__idade">29</span>.
+                  </h3>
+                  <a class="desenvolvedor__email" href="#"
+                    >darlisson.dev@gmail.com</a
+                  >
+                  <a class="desenvolvedor__linkedin" href="">Linkedin</a>
+                </div>
               </div>
-
-              <div class="cadastro__form-control">
-                <label for="negocio"> Tipo do negócio </label>
-                <input id="negocio" type="text" required />
-              </div>
-
-              <div class="cadastro__form-control">
-                <label for="logo-image"> Logo da empresa </label>
-                <input id="logo-image" type="file" required />
-              </div>
-
-              <div class="cadastro__form-control">
-                <label for="url"> Endereço do site </label>
-                <input id="url" type="text" />
-              </div>
-
-              <button class="cadastro-form__button" type="submit">
-                Cadastrar
-              </button>
-            </form>
-          </div>
+            </li>
+          </ul>
         </section>
       </main>
     </div>

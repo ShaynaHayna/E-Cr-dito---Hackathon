@@ -18,28 +18,50 @@
   <body>
     <header class="header">
       <h1 class="logo">
-        <a class="logo__link" href="index.html">E-Crédito</a>
+        <a class="logo__link" href="index.html">e-Crédito</a>
       </h1>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
+          <li class="nav__item"><a href="beneficios.html">Benefícios</a></li>
+          <li class="nav__item">
+            <a href="empresas.html">Empresas Parceiras</a>
+          </li>
+          <li class="nav__item dropdown">
+            <button>Cadastre-se</button>
+            <div class="dropdown-content">
+              <a href="registro-empresa.html">Empresas</a>
+              <a href="registro-autonomo.html">Profissionais</a>
+            </div>
+          </li>
+          <li class="nav__item"><a href="quem-somos.html">Quem Somos</a></li>
+          <li class="nav__item"><a href="contato.html">Contato</a></li>
+          <li class="nav__item">
+            <a href="login.html"><span>Log in</span></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="container">
         <h1>Iniciar Sessão</h1>
         <form>
-            <div class="form-control">
-                <input type="text" required>
-                <label>Seu Email</label>
-            </div>
-            <div class="form-control">
-                <input type="password" required>
-                <label>Sua Senha</label>
-            </div>
-            <button class="btn">Enviar</button>
-            <p class="text">Não tem uma conta?
-                <a href="#">Criar Conta</a>
-            </p>
+          <div class="form-control">
+            <label>Seu Email</label>
+            <input type="text" required />
+          </div>
+          <div class="form-control">
+            <label>Sua Senha</label>
+            <input type="password" required />
+          </div>
+          <button class="btn">Entrar</button>
+          <p class="text">
+            Não tem uma conta?
+            <a href="#">Criar Conta</a>
+          </p>
         </form>
       </div>
-    <script src="./javascript/index.js"></script>
+      <script src="./javascript/index.js"></script>
     </main>
   </body>
 </html>

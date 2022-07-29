@@ -19,16 +19,28 @@
   <body>
     <div class="app">
       <header class="header">
-        <h1 class="logo"><a class="logo__link" href="">e-Crédito</a></h1>
+        <h1 class="logo">
+          <a class="logo__link" href="index.html">e-Crédito</a>
+        </h1>
         <nav class="nav">
           <ul class="nav__links">
-            <li class="nav__item"><a href="#">Iniciativa</a></li>
-            <li class="nav__item"><a href="#">Benefícios</a></li>
-            <li class="nav__item"><a href="#">Empresas Parceiras</a></li>
-            <li class="nav__item"><a href="#">Cadastre-se</a></li>
-            <li class="nav__item"><a href="#">Quem Somos</a></li>
-            <li class="nav__item"><a href="#">Contato</a></li>
-            <li class="nav__item"><a href="#"><span>Log in</span></a></li>
+            <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
+            <li class="nav__item"><a href="beneficios.html">Benefícios</a></li>
+            <li class="nav__item">
+              <a href="empresas.html">Empresas Parceiras</a>
+            </li>
+            <li class="nav__item dropdown">
+              <button>Cadastre-se</button>
+              <div class="dropdown-content">
+                <a href="registro-empresa.html">Empresas</a>
+                <a href="registro-autonomo.html">Profissionais</a>
+              </div>
+            </li>
+            <li class="nav__item"><a href="quem-somos.html">Quem Somos</a></li>
+            <li class="nav__item"><a href="contato.html">Contato</a></li>
+            <li class="nav__item">
+              <a href="login.html"><span>Log in</span></a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -110,15 +122,17 @@
 
         <div class="hero__div">
           <h3>Interessado?</h3>
-            <nav class="hero__button">
-              <a href="#" class="hero__button button-secondary">Cadastre-se aqui!</a>
-            </nav>
+          <nav class="hero__button">
+            <a href="#" class="hero__button button-secondary"
+              >Cadastre-se aqui!</a
+            >
+          </nav>
         </div>
         <div class="hero__div2">
-            <h3>Ainda não nos conhece?</h3>
-            <nav class="hero__button2">
-              <a href="#" class="hero__button button-primary">Bora lá!</a>
-            </nav>
+          <h3>Ainda não nos conhece?</h3>
+          <nav class="hero__button2">
+            <a href="#" class="hero__button button-primary">Bora lá!</a>
+          </nav>
         </div>
       </section>
 
@@ -126,7 +140,9 @@
       <footer>
         <p>Todos os direitos reservados e-Crédito</p>
         <div>
-          <a href="#" type="button" class="download__button">Baixe nosso App!</a>
+          <a href="#" type="button" class="download__button"
+            >Baixe nosso App!</a
+          >
         </div>
         <p>2022</p>
       </footer>

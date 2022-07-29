@@ -16,52 +16,97 @@
     <title>e-Crédito</title>
   </head>
 
-    <body>
-        <!-- MAIN -->
-        <main class="container-main">
-            <!-- PARCEIROS -->
-            <section class="parceiros">
-            <h2>Empresas Parceiras</h2>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1 class="logo">
+          <a class="logo__link" href="index.html">e-Crédito</a>
+        </h1>
+        <div class="search">
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Pesquisar serviços"
+          />
+          <button class="search-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__item"><a href="beneficios.html">Benefícios</a></li>
 
-            <section class="cards">
-                <div class="card">
-                <div class="image">
-                    <img src="./images/unicornio.webp" />
-                </div>
+            <li class="nav__item dropdown">
+              <button>Cadastre-se</button>
+              <div class="dropdown-content">
+                <a href="registro-empresa.html">Empresas</a>
+                <a href="registro-autonomo.html">Profissionais</a>
+              </div>
+            </li>
+            <li class="nav__item"><a href="contato.html">Contato</a></li>
+            <li class="nav__item">
+              <a href="login.html"><span>Log in</span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- MAIN -->
+      <main class="container-main">
+        <!-- PARCEIROS -->
+        <section class="parceiros">
+          <h2 class="parceiros__titulo">Empresas Parceiras</h2>
 
-                <div class="content">
-                    <p class="title text--medium">Empresa</p>
-                    <div class="info">
-                    <p class="text--medium">Descrição</p>
-                    </div>
-                </div>
-                </div>
-                <div class="card">
-                <div class="image">
-                    <img src="./images/unicornio.webp" />
-                </div>
+          <section class="cards">
+            <div class="card">
+              <div class="image">
+                <img src="./images/unicornio.webp" />
+              </div>
 
-                <div class="content">
-                    <p class="title text--medium">Empresa</p>
-                    <div class="info">
-                    <p class="text--medium">Descrição</p>
-                    </div>
+              <div class="content">
+                <p class="title text--medium">Empresa</p>
+                <div class="info">
+                  <p class="text--medium">Descrição</p>
                 </div>
-                </div>
-                <div class="card">
-                <div class="image">
-                    <img src="./images/unicornio.webp" />
-                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./images/unicornio.webp" />
+              </div>
 
-                <div class="content">
-                    <p class="title text--medium">Empresa</p>
-                    <div class="info">
-                    <p class="text--medium">Descrição</p>
-                    </div>
+              <div class="content">
+                <p class="title text--medium">Empresa</p>
+                <div class="info">
+                  <p class="text--medium">Descrição</p>
                 </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./images/unicornio.webp" />
+              </div>
+
+              <div class="content">
+                <p class="title text--medium">Empresa</p>
+                <div class="info">
+                  <p class="text--medium">Descrição</p>
                 </div>
-            </section>
-            </section>
-        </main>
-    </body>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

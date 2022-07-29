@@ -1,8 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap"); */
 
 main {
-  /* font-family: "Multi", sans-serif; */
-  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +15,6 @@ h1 {
 }
 
 .container {
-  background-color: #393e467d;
   padding: 20px 40px;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -37,7 +34,7 @@ h1 {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background: #529fe2;
+  background: #0080ed;
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
@@ -58,40 +55,28 @@ h1 {
 }
 
 .form-control {
-  position: relative;
-  margin: 20px 0 40px;
-  width: 300px;
+  width: 400px;
+  margin-bottom: 2rem;
+}
+
+.form-control label {
+  display: block;
+  margin: 1rem 0;
 }
 
 .form-control input {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px #fff solid;
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 1rem;
   font-size: 18px;
-  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #777;
 }
 
 .form-control input:focus,
 .form-control input:valid {
-  outline: 0;
-  border-bottom-color: #529fe2;
-}
-
-.form-control label {
-  position: absolute;
-  top: 15px;
-  left: 0;
-  pointer-events: none;
-}
-
-.form-control label span {
-  display: inline-block;
-  font-size: 18px;
-  min-width: 5px;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  outline: 3px solid #529fe269;
+  border: 2px solid #0080ed;
 }
 
 .form-control input:focus + label span,
@@ -100,6 +85,14 @@ h1 {
   transform: translateY(-30px);
 }
 
-footer {
-  margin-top: 500px;
+form .btn {
+  margin: 2rem 0;
+  color: white;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.text a {
+  color: #0080ed;
+  font-weight: 500;
 }

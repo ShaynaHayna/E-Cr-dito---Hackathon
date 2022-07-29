@@ -12,12 +12,16 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>E-Credito - Para empresas</title>
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>e-Crédito</title>
   </head>
+
   <body>
     <div class="app">
       <header class="header">
-        <h1 class="logo"><a class="logo__link" href="">E-Crédito</a></h1>
+        <h1 class="logo">
+          <a class="logo__link" href="index.html">e-Crédito</a>
+        </h1>
         <nav class="nav">
           <ul class="nav__links">
             <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
@@ -40,48 +44,32 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <section class="cadastro">
-          <h2 class="cadastro__titulo">Cadastro para Empresas</h2>
-          <div class="cadastro-area">
-            <img
-              class="cadastro__image"
-              src="./assets/images/form-image.svg"
-              alt="ilustraçao de um formulario"
-            />
-            <form class="cadastro-form" action="">
-              <div class="cadastro__form-control">
-                <label for="nome"> Nome da empresa </label>
-                <input id="nome" type="text" required />
-              </div>
 
-              <div class="cadastro__form-control">
-                <label for="cnpj"> CNPJ </label>
-                <input id="cnpj" type="text" required />
-              </div>
+      <section class="page">
+        <h2 class="page__title">Sobre a iniciativa</h2>
+        <p class="page__paragraph">
+          Nossa iniciativa busca abrir espaço para o surgimento de incentivos e
+          parcerias ao aproximar profissionais autônomos, instituições
+          financeiras e demais empresas parceiras (seguradoras, lojas de
+          departamentos, instituições educacionais, plataformas digitais, e
+          etc.). E é justamente nessa área sem nenhum auxílio externo que mais
+          podemos nos ajudar! Enquanto as empresas podem oferecer serviços
+          especializados a custo reduzido e conquistar seu público ideal, os
+          profissionais podem encontrar o que procuram a um melhor
+          custo/benefício! Todos saem ganhando!
+        </p>
+      </section>
 
-              <div class="cadastro__form-control">
-                <label for="negocio"> Tipo do negócio </label>
-                <input id="negocio" type="text" required />
-              </div>
-
-              <div class="cadastro__form-control">
-                <label for="logo-image"> Logo da empresa </label>
-                <input id="logo-image" type="file" required />
-              </div>
-
-              <div class="cadastro__form-control">
-                <label for="url"> Endereço do site </label>
-                <input id="url" type="text" />
-              </div>
-
-              <button class="cadastro-form__button" type="submit">
-                Cadastrar
-              </button>
-            </form>
-          </div>
-        </section>
-      </main>
+      <!-- FOOTER -->
+      <footer>
+        <p>Todos os direitos reservados e-Crédito</p>
+        <div>
+          <a href="#" type="button" class="download__button"
+            >Baixe nosso App!</a
+          >
+        </div>
+        <p>2022</p>
+      </footer>
     </div>
   </body>
 </html>
