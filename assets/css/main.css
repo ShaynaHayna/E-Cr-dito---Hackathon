@@ -491,12 +491,13 @@ fieldset legend {
 }
 
 .desenvolvedores__list {
-  width: 900px;
+  min-width: 1000px;
+  max-width: 1500px;
   margin: auto;
 }
 
 .desenvolvedores__item {
-  width: 30%;
+  width: 20%;
   float: left;
 }
 
