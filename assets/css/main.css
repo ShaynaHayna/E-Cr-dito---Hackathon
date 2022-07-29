@@ -434,10 +434,6 @@ fieldset legend {
   font-size: 2em;
 }
 
-.descricao__empresa{
-  color: ;
-}
-
 /* Pages */
 .page__title {
   margin: 3rem 0;
@@ -447,10 +443,20 @@ fieldset legend {
 
 .page__paragraph {
   font-size: 1.75rem;
-  width: 700px;
+  width: 1000px;
   margin: 0 auto;
   line-height: 140%;
   text-indent: 3rem;
+}
+
+.chamada__beneficios {
+  margin: 3rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.link__beneficios:hover {
+  color: #0080ed;
 }
 
 /* BENEFICIOS */
