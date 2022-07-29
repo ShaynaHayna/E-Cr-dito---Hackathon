@@ -1,0 +1,126 @@
+/* Parceiros */
+
+.parceiros {
+    margin: 4rem 0;
+  }
+  
+  .parceiros h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .text--medium {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px hsla(0, 0%, 0%, 0.2);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .card:hover {
+    transform: translateY(-7px);
+  }
+  
+  .image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image img {
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content {
+    margin: 20px;
+  }
+  
+  .title {
+    margin-bottom: 0px;
+  }
+
+  /* REGISTRO */
+
+.cadastro {
+    margin: 5rem 0;
+  }
+  
+  .cadastro__titulo {
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 3rem;
+  }
+  
+  .cadastro-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cadastro__image {
+    display: flex;
+    height: 300px;
+  }
+  
+  .cadastro-form {
+    margin: 0 10rem;
+  }
+  
+  .cadastro__form-control {
+    margin: 2rem 0;
+  }
+  
+  .cadastro__form-control input {
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #777;
+  }
+  
+  .cadastro__form-control input:focus {
+    border: 2px solid #0080ed;
+    outline: 3px solid rgba(0, 126, 237, 0.2);
+  }
+  
+  .cadastro__form-control label {
+    font-size: 1.75rem;
+  }
+  
+  .cadastro-form__button {
+    background-color: #0080ed;
+    border: none;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    transition: all 0.2s ease;
+  }
+  
+  .cadastro-form__button:hover {
+    background-color: #2f92e8;
+  }

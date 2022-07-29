@@ -3,10 +3,10 @@
 }
 
 body {
-  background-color: #fcfcfc;
+  background-color: #030303;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
-  color: #222;
+  color: rgb(255, 255, 255);
   font-smooth: auto;
 }
 
@@ -47,26 +47,23 @@ header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
+header nav ul li a span{
+  color: rgb(207, 166, 90);
+}
+
 /* Hero */
 
 .hero {
-  padding: 0 2rem;
-}
-
-.hero__titulo {
-  font-size: 8rem;
-  font-weight: 600;
-}
-
-.hero__subtitulo {
-  margin-bottom: 15px;
-  color: #777;
+  background-image: url("https://www.cocvilayara.com.br/blog/img/blog-confira-alguns-apps-para-treinar-seu-ingles-durante-o-isolamento.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 
 .hero__info {
   display: flex;
   gap: 2rem;
-  height: 350px;
+  height: 500px;
 }
 
 .hero__introdução {
@@ -75,6 +72,18 @@ header nav ul li a:hover {
   justify-content: flex-end;
   padding-bottom: 4rem;
   flex: 1;
+  margin-left: 180px;
+}
+
+.hero__titulo {
+  font-size: 8rem;
+  font-weight: 600;
+}
+
+.hero__subtitulo {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #51a1e7;
 }
 
 .hero__lista {
@@ -93,17 +102,65 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 1rem;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: .5s;
+}
+
+.hero__lista li:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.hero__lista li:nth-child(2) {
+  animation-delay: 1.6s;
+}
+
+.hero__lista li:nth-child(3) {
+  animation-delay: 2.2s;
+}
+
+.hero__lista li:nth-child(4) {
+  animation-delay: 2.8s;
+}
+
+.hero__lista li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(224, 196, 36, 0.034);
+}
+
+.hero__lista li:nth-child(1) span {
+  animation-delay: .5s;
+}
+
+.hero__lista li:nth-child(2) span {
+  animation-delay: 1s;
+}
+
+.hero__lista li:nth-child(3) span {
+  animation-delay: 1.5s;
+}
+
+.hero__lista li:nth-child(4) span {
+  animation-delay: 2s;
 }
 
 .hero__div {
-  margin: 5rem 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero__div h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.hero__div2 {
+  display: flex;
+}
+
+.hero__div2 h3 {
   font-size: 25px;
   text-align: center;
 }
@@ -115,108 +172,38 @@ header nav ul li a:hover {
 }
 
 .hero__button {
-  display: block;
-  text-align: center;
-  padding: 10px 30px;
-  background-color: transparent;
-  border: 2px solid #0080ed;
-  color: #0080ed;
-  font-weight: 500;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  transition: 0.5s ease;
-  transition-property: background-color, color;
-  height: 50px;
-  width: 300px;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  display: flex;
 }
-.button-secondary:hover {
-  color: white;
-  font-weight: 500;
-  background-color: #0080ed;
+
+.button-secondary {
+  display: flex;
 }
 
 .button-primary {
-  background-color: #0080ed;
+ display: flex;
+}
+
+.button-secondary:hover {
   color: white;
+  background-color: rgb(4, 64, 133);
 }
 
-/* Parceiros */
-
-.parceiros {
-  margin: 4rem 0;
-}
-
-.parceiros h2 {
-  margin-bottom: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.cards {
-  width: 90%;
-  max-width: 980px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-}
-
-.text--medium {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #000;
-  text-align: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  box-shadow: 5px 5px 15px -4px hsla(0, 0%, 0%, 0.2);
-  transition: all 0.3s ease 0s;
-}
-
-.card:hover {
-  transform: translateY(-7px);
-}
-
-.image {
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
-  position: relative;
-}
-
-.image img {
-  position: absolute;
-  border-radius: 10px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.content {
-  margin: 20px;
-}
-
-.title {
-  margin-bottom: 0px;
+.button-primary:hover {
+  color: white;
+  background-color: rgb(4, 64, 133);
 }
 
 /* Footer */
 
 footer {
+  position: absolute;
+  bottom: 0;
   background-color: #0080ed;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 0;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
   margin-top: 50px;
   color: #fff;
 }
@@ -225,16 +212,9 @@ footer {
   margin-left: auto;
 }
 
-/* REGISTRO */
-
-.cadastro {
-  margin: 5rem 0;
-}
-
-.cadastro__titulo {
-  text-align: center;
-  margin: 4rem 0;
-  font-size: 3rem;
+.download__button {
+  margin: 50px;
+  padding: 10px;
 }
 
 .cadastro-area {
@@ -293,6 +273,26 @@ footer {
 
 .cadastro-form__button:hover {
   background-color: #2f92e8;
+}
+
+.download__button:hover{
+  margin: 50px;
+  background-color: rgba(255,255,255,0.15);
+  
+}
+
+/*Keyframes*/
+@keyframes text_reveal{
+  100%{
+      color: white;
+      background-color: #2f92e8;
+  }
+}
+@keyframes text_reveal_name{
+  100%{
+      color: rgb(41, 124, 201);
+      font-size: 80px;
+      }
 }
 
 fieldset legend {
