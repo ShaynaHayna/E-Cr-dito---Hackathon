@@ -20,6 +20,7 @@ h1 {
   background-color: #393e467d;
   padding: 20px 40px;
   border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .container h1 {
@@ -97,4 +98,8 @@ h1 {
 .form-control input:valid + label span {
   color: lightblue;
   transform: translateY(-30px);
+}
+
+footer {
+  margin-top: 500px;
 }
