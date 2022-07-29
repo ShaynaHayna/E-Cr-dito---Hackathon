@@ -54,6 +54,7 @@ header nav ul li a,
 .dropdown-content {
   position: absolute;
   display: none;
+  z-index: 100;
   top: 100%;
   background-color: #0080ed;
 }
@@ -359,6 +360,32 @@ footer {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+fieldset legend {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cadastro__form-control--checkboxes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cadastro__form-control--checkboxes input {
+  width: min-content;
+  margin-top: 0;
+}
+
+/* Logado */
+.cadastro-continue {
+  margin: 5rem 0;
+}
+
+.cadastro-continue form {
+  margin: 0;
+  width: 600px;
+}
+
 /* Empresas  */
 .parceiros {
   margin: 3rem 2rem;
@@ -464,22 +491,6 @@ footer {
     color: rgb(41, 124, 201);
     font-size: 80px;
   }
-}
-
-fieldset legend {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.cadastro__form-control--checkboxes {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.cadastro__form-control--checkboxes input {
-  width: min-content;
-  margin-top: 0;
 }
 
 @import "queries.css";

@@ -16,213 +16,152 @@
     <title>Login E-Crédito</title>
   </head>
 
-<body> 
+  <body>
     <header class="header">
-        <h1 class="logo">
-          <a class="logo__link" href="index.html">e-Crédito</a>
-        </h1>
-        <nav class="nav">
-          <ul class="nav__links">
-            <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
-            <li class="nav__item"><a href="beneficios.html">Benefícios</a></li>
-            <li class="nav__item">
-              <a href="empresas.html">Empresas Parceiras</a>
-            </li>
-            <li class="nav__item dropdown">
-              <button>Cadastre-se</button>
-              <div class="dropdown-content">
-                <a href="registro-empresa.html">Empresas</a>
-                <a href="registro-autonomo.html">Profissionais</a>
-              </div>
-            </li>
-            <li class="nav__item"><a href="quem-somos.html">Quem Somos</a></li>
-            <li class="nav__item"><a href="contato.html">Contato</a></li>
-            <li class="nav__item">
-              <a href="login.html"><span>Sair</span></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <fieldset>
-            <legend>Do que você precisa?</legend>
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="emprestimo"
-                name="precisa"
-                type="checkbox"
-                required
-              />
-              <label for="emprestimo">Empréstimo</label>
+      <h1 class="logo">
+        <a class="logo__link" href="index.html">e-Crédito</a>
+      </h1>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
+          <li class="nav__item"><a href="beneficios.html">Benefícios</a></li>
+          <li class="nav__item">
+            <a href="empresas.html">Empresas Parceiras</a>
+          </li>
+          <li class="nav__item dropdown">
+            <button>Cadastre-se</button>
+            <div class="dropdown-content">
+              <a href="registro-empresa.html">Empresas</a>
+              <a href="registro-autonomo.html">Profissionais</a>
             </div>
+          </li>
+          <li class="nav__item"><a href="quem-somos.html">Quem Somos</a></li>
+          <li class="nav__item"><a href="contato.html">Contato</a></li>
+          <li class="nav__item">
+            <a href="login.html"><span>Sair</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page cadastro-continue">
+        <h2 class="page__title">Continue seu cadastro</h2>
+        <form class="cadastro-form" action="">
+          <div class="cadastro__form-control">
+            <label for="valor">Valor pretendido:</label>
+            <input id="valor" name="valor" type="number" required />
+          </div>
 
-            <div class="cadastro__form-control">
-                <label for="valor">Valor pretendido:</label>
-                <input id="valor" name="valor" type="number" required />
-            </div>
+          <div class="cadastro__form-control">
+            <label for="valor">Finalidade:</label>
+            <input id="finalidade" name="finalidade" type="text" required />
+          </div>
 
-            <div class="cadastro__form-control">
-                <label for="valor">Finalidade:</label>
-                <input id="finalidade" name="finalidade" type="text" required />
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="consorcio" name="precisa" type="checkbox" required />
+            <label for="consorcio">Consórcio</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="consorcio"
-                name="precisa"
-                type="checkbox"
-                required
-              />
-              <label for="consorcio">Consórcio</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="consorcio-1" name="precisa" type="checkbox" required />
+            <label for="consorcio-1">Imóvel</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="consorcio-1"
-                name="precisa"
-                type="checkbox"
-                required
-              />
-              <label for="consorcio-1">Imóvel</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="consorcio-2" name="precisa" type="checkbox" required />
+            <label for="consorcio-2">Veículo/Moto</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="consorcio-2"
-                name="precisa"
-                type="checkbox"
-                required
-              />
-              <label for="consorcio-2">Veículo/Moto</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="consorcio-3" name="precisa" type="checkbox" required />
+            <label for="consorcio-3">Bens Diversos</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="consorcio-3"
-                name="precisa"
-                type="checkbox"
-                required
-              />
-              <label for="consorcio-3">Bens Diversos</label>
-            </div>
+          <div class="cadastro__form-control">
+            <label for="valor">Valor pretendido:</label>
+            <input id="valor" name="valor" type="number" required />
+          </div>
 
-            <div class="cadastro__form-control">
-                <label for="valor">Valor pretendido:</label>
-                <input id="valor" name="valor" type="number" required />
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input
+              id="financiamento"
+              name="financiamento"
+              type="checkbox"
+              required
+            />
+            <label for="financiamento">Financiamento</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="financiamento"
-                name="financiamento"
-                type="checkbox"
-                required
-              />
-              <label for="financiamento">Financiamento</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input
+              id="financiamento-1"
+              name="financiamento"
+              type="checkbox"
+              required
+            />
+            <label for="financiamento-1">Imóvel</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="financiamento-1"
-                name="financiamento"
-                type="checkbox"
-                required
-              />
-              <label for="financiamento-1">Imóvel</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="consorcio-2" name="precisa" type="checkbox" required />
+            <label for="consorcio-2">Veículo/Moto</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="consorcio-2"
-                name="precisa"
-                type="checkbox"
-                required
-              />
-              <label for="consorcio-2">Veículo/Moto</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="consorcio-3" name="precisa" type="checkbox" required />
+            <label for="consorcio-3">Bens Diversos</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="consorcio-3"
-                name="precisa"
-                type="checkbox"
-                required
-              />
-              <label for="consorcio-3">Bens Diversos</label>
-            </div>
+          <div class="cadastro__form-control">
+            <label for="valor">Valor pretendido:</label>
+            <input id="valor" name="valor" type="number" required />
+          </div>
 
-            <div class="cadastro__form-control">
-                <label for="valor">Valor pretendido:</label>
-                <input id="valor" name="valor" type="number" required />
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="seguro" name="seguro" type="checkbox" required />
+            <label for="seguro">Seguros</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="seguro"
-                name="seguro"
-                type="checkbox"
-                required
-              />
-              <label for="seguro">Seguros</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="seguro-1" name="seguro" type="checkbox" required />
+            <label for="seguro-1">Auto/Moto</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="seguro-1"
-                name="seguro"
-                type="checkbox"
-                required
-              />
-              <label for="seguro-1">Auto/Moto</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="seguro-2" name="seguro" type="checkbox" required />
+            <label for="seguro-2">Vida</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="seguro-2"
-                name="seguro"
-                type="checkbox"
-                required
-              />
-              <label for="seguro-2">Vida</label>
-            </div>
+          <div
+            class="cadastro__form-control cadastro__form-control--checkboxes"
+          >
+            <input id="seguro-3" name="seguro" type="checkbox" required />
+            <label for="seguro-3">Outros</label>
+          </div>
 
-            <div
-              class="cadastro__form-control cadastro__form-control--checkboxes"
-            >
-              <input
-                id="seguro-3"
-                name="seguro"
-                type="checkbox"
-                required
-              />
-              <label for="seguro-3">Outros</label>
-            </div>
-            
-            <div
+          <div
             class="cadastro__form-control cadastro__form-control--checkboxes"
           >
             <input
@@ -233,9 +172,10 @@
             />
             <label for="previdencia">Previdência Privada</label>
           </div>
-        </fieldset>
 
-        <a href="perguntas.html"><button class="btn">Próximo</button></a>
-      </main>
-</body>
+          <button class="btn">Próximo</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

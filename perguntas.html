@@ -16,35 +16,38 @@
     <title>Login E-Crédito</title>
   </head>
 
-<body> 
+  <body>
     <header class="header">
-        <h1 class="logo">
-          <a class="logo__link" href="index.html">e-Crédito</a>
-        </h1>
-        <nav class="nav">
-          <ul class="nav__links">
-            <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
-            <li class="nav__item"><a href="beneficios.html">Benefícios</a></li>
-            <li class="nav__item">
-              <a href="empresas.html">Empresas Parceiras</a>
-            </li>
-            <li class="nav__item dropdown">
-              <button>Cadastre-se</button>
-              <div class="dropdown-content">
-                <a href="registro-empresa.html">Empresas</a>
-                <a href="registro-autonomo.html">Profissionais</a>
-              </div>
-            </li>
-            <li class="nav__item"><a href="quem-somos.html">Quem Somos</a></li>
-            <li class="nav__item"><a href="contato.html">Contato</a></li>
-            <li class="nav__item">
-              <a href="login.html"><span>Sair</span></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <div class="cadastro__form-control">
+      <h1 class="logo">
+        <a class="logo__link" href="index.html">e-Crédito</a>
+      </h1>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item"><a href="iniciativa.html">Iniciativa</a></li>
+          <li class="nav__item"><a href="beneficios.html">Benefícios</a></li>
+          <li class="nav__item">
+            <a href="empresas.html">Empresas Parceiras</a>
+          </li>
+          <li class="nav__item dropdown">
+            <button>Cadastre-se</button>
+            <div class="dropdown-content">
+              <a href="registro-empresa.html">Empresas</a>
+              <a href="registro-autonomo.html">Profissionais</a>
+            </div>
+          </li>
+          <li class="nav__item"><a href="quem-somos.html">Quem Somos</a></li>
+          <li class="nav__item"><a href="contato.html">Contato</a></li>
+          <li class="nav__item">
+            <a href="login.html"><span>Sair</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page cadastro-continue">
+        <h2 class="page__title">Continue seu cadastro</h2>
+        <form class="cadastro-form" action="">
+          <div class="cadastro__form-control">
             <label for="email">Endereço completo</label>
             <input id="email" name="email" type="email" required />
           </div>
@@ -144,9 +147,7 @@
                 type="checkbox"
                 required
               />
-              <label for="interesse-produtos"
-                >Consumo de Produtos Gerais</label
-              >
+              <label for="interesse-produtos">Consumo de Produtos Gerais</label>
             </div>
 
             <div
@@ -158,9 +159,7 @@
                 type="checkbox"
                 required
               />
-              <label for="interesse-produtos"
-                >Consumo de Serviços Gerais</label
-              >
+              <label for="interesse-produtos">Consumo de Serviços Gerais</label>
             </div>
 
             <div
@@ -246,72 +245,40 @@
           </fieldset>
 
           <fieldset>
-            <legend>
-              Quantas pessoas vivem da renda mensal informada?
-            </legend>
+            <legend>Quantas pessoas vivem da renda mensal informada?</legend>
 
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="qtd-1"
-                name="qtd"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="qtd-1" name="qtd" type="radio" value="A" required />
               <label for="qtd-1">1</label>
             </div>
 
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="qtd-2"
-                name="qtd"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="qtd-2" name="qtd" type="radio" value="A" required />
               <label for="qtd-2">2</label>
             </div>
 
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="qtd-3"
-                name="qtd"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="qtd-3" name="qtd" type="radio" value="A" required />
               <label for="qtd-3">3</label>
             </div>
 
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="qtd-4"
-                name="qtd"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="qtd-4" name="qtd" type="radio" value="A" required />
               <label for="qtd-4">4</label>
             </div>
 
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="qtd-5"
-                name="qtd"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="qtd-5" name="qtd" type="radio" value="A" required />
               <label for="qtd-5">Mais de 4</label>
             </div>
           </fieldset>
@@ -627,39 +594,21 @@
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="casa-1"
-                name="casas"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="casa-1" name="casas" type="radio" value="A" required />
               <label for="casa-1">Própria</label>
             </div>
 
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="casa-2"
-                name="casas"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="casa-2" name="casas" type="radio" value="A" required />
               <label for="casa-2">Alugada</label>
             </div>
 
             <div
               class="cadastro__form-control cadastro__form-control--checkboxes"
             >
-              <input
-                id="casa-3"
-                name="casas"
-                type="radio"
-                value="A"
-                required
-              />
+              <input id="casa-3" name="casas" type="radio" value="A" required />
               <label for="casa-3">Outras situações de moradia</label>
             </div>
           </fieldset>
@@ -771,8 +720,7 @@
 
           <fieldset>
             <legend>
-              Qual o principal responsável por seu sustento e/ou de sua
-              família?
+              Qual o principal responsável por seu sustento e/ou de sua família?
             </legend>
 
             <div
@@ -886,123 +834,109 @@
                 name="computadores"
                 type="radio"
                 value="A"
-                required/>
-                <label for="pc-1">Nenhum</label>
-              </div>
+                required
+              />
+              <label for="pc-1">Nenhum</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="pc-2"
-                  name="computadores"
-                  type="radio"
-                  value="A"
-                  required
-                />
-                <label for="pc-2">1</label>
-              </div>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input
+                id="pc-2"
+                name="computadores"
+                type="radio"
+                value="A"
+                required
+              />
+              <label for="pc-2">1</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="pc-3"
-                  name="computadores"
-                  type="radio"
-                  value="A"
-                  required
-                />
-                <label for="pc-3">2</label>
-              </div>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input
+                id="pc-3"
+                name="computadores"
+                type="radio"
+                value="A"
+                required
+              />
+              <label for="pc-3">2</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="pc-4"
-                  name="computadores"
-                  type="radio"
-                  value="A"
-                  required
-                />
-                <label for="pc-4">3 ou mais</label>
-              </div>
-            </fieldset>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input
+                id="pc-4"
+                name="computadores"
+                type="radio"
+                value="A"
+                required
+              />
+              <label for="pc-4">3 ou mais</label>
+            </div>
+          </fieldset>
 
-            <fieldset>
-              <legend>O que você gosta de fazer no seu tempo livre?</legend>
+          <fieldset>
+            <legend>O que você gosta de fazer no seu tempo livre?</legend>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="lazer-esportes"
-                  name="lazer"
-                  type="checkbox"
-                  required
-                />
-                <label for="lazer-esportes">Praticar esportes</label>
-              </div>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input
+                id="lazer-esportes"
+                name="lazer"
+                type="checkbox"
+                required
+              />
+              <label for="lazer-esportes">Praticar esportes</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="lazer-viajar"
-                  name="lazer"
-                  type="checkbox"
-                  required
-                />
-                <label for="lazer-viajar">Viajar</label>
-              </div>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input id="lazer-viajar" name="lazer" type="checkbox" required />
+              <label for="lazer-viajar">Viajar</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input id="lazer-ler" name="lazer" type="checkbox" required />
-                <label for="lazer-ler">Ler</label>
-              </div>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input id="lazer-ler" name="lazer" type="checkbox" required />
+              <label for="lazer-ler">Ler</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="lazer-cursos"
-                  name="lazer"
-                  type="checkbox"
-                  required
-                />
-                <label for="lazer-cursos">Cursos</label>
-              </div>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input id="lazer-cursos" name="lazer" type="checkbox" required />
+              <label for="lazer-cursos">Cursos</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="lazer-assistir"
-                  name="lazer"
-                  type="checkbox"
-                  required
-                />
-                <label for="lazer-assistir"
-                  >Assistir filmes, séries, etc</label
-                >
-              </div>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input
+                id="lazer-assistir"
+                name="lazer"
+                type="checkbox"
+                required
+              />
+              <label for="lazer-assistir">Assistir filmes, séries, etc</label>
+            </div>
 
-              <div
-                class="cadastro__form-control cadastro__form-control--checkboxes"
-              >
-                <input
-                  id="lazer-outros"
-                  name="lazer"
-                  type="checkbox"
-                  required
-                />
-                <label for="lazer-esportes">Outros</label>
-              </div>
-            </fieldset>
-        <a href="perguntas.html"><button class="btn">Enviar</button></a>
-      </main>
-</body>
+            <div
+              class="cadastro__form-control cadastro__form-control--checkboxes"
+            >
+              <input id="lazer-outros" name="lazer" type="checkbox" required />
+              <label for="lazer-esportes">Outros</label>
+            </div>
+          </fieldset>
+          <button class="btn">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
