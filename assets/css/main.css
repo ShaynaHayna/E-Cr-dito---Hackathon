@@ -458,6 +458,11 @@ fieldset legend {
   margin: auto;
 }
 
+.desenvolvedores__item {
+  width: 30%;
+  float: left;
+}
+
 .desenvolvedor {
   width: min-content;
 }
